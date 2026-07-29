@@ -1,0 +1,14 @@
+[package]
+name = "banto-kernel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "banto の台帳カーネル: 追記専用・ハッシュ連鎖・証拠付きイベントの検証器兼書き込み器"
+publish = false
+
+[dependencies]
+serde_json = "1"
+sha2 = "0.10"
+hex = "0.4"
+thiserror = "2"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
