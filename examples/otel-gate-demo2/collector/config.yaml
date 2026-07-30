@@ -1,0 +1,36 @@
+# 独立Collector — エージェントの手が届かない受領・保全境界
+# 使う部品はすべて otelcol-contrib 同梱の標準機能:
+#   - OTLP/HTTP 受信 + TLS(サーバ証明書)
+#   - bearertokenauth(受信の認証)
+#   - file exporter(受領した span の保全先)
+# 保全先ディレクトリはエージェント権限では読めない・書けない(chmod 700, root所有)
+
+extensions:
+  bearertokenauth:
+    scheme: Bearer
+    token: ${env:OTEL_VAULT_TOKEN}
+
+receivers:
+  otlp:
+    protocols:
+      http:
+        endpoint: 127.0.0.1:4318
+        tls:
+          cert_file: ${env:OTEL_VAULT_CERT}
+          key_file: ${env:OTEL_VAULT_KEY}
+        auth:
+          authenticator: bearertokenauth
+
+exporters:
+  file:
+    path: ${env:OTEL_VAULT_DIR}/spans.jsonl
+
+service:
+  extensions: [bearertokenauth]
+  pipelines:
+    traces:
+      receivers: [otlp]
+      exporters: [file]
+  telemetry:
+    logs:
+      level: info

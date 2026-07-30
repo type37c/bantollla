@@ -1,0 +1,9 @@
+# banto ワークスペース設定(すべて省略可。仕様は docs/cli_spec_v1.md)
+actor = "unknown"
+# stall_days = 4        # project の停滞閾値(日)
+# habit_stall_days = 2  # habit の停滞閾値(日)
+# wip_limit = 2         # 稼働中プロジェクトの上限(habit は数えない)
+
+# [paths]
+# ledger = "ledger/ledger.jsonl"
+# objects = "ledger/objects"
