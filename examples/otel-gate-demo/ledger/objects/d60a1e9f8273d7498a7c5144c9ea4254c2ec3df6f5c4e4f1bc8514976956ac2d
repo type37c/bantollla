@@ -1,0 +1,1554 @@
+{
+ "protocol": "docs/governor_r1_protocol.md v1.0",
+ "n_streams": 30,
+ "agg": {
+  "GOV": {
+   "catch": 0.7933722443868416,
+   "cost": 3.3379999999999996,
+   "false_hold": 0.11408633244987251,
+   "switches": 2.3333333333333335
+  },
+  "SINGLE": {
+   "catch": 0.769249125261545,
+   "cost": 3.3666666666666663,
+   "false_hold": 0.11676823895151886,
+   "switches": 4.166666666666667
+  },
+  "ALL": {
+   "catch": 0.8971090472100796,
+   "cost": 4.0,
+   "false_hold": 0.13809403839979909,
+   "switches": null
+  },
+  "NONE": {
+   "catch": 0.0,
+   "cost": 0.0,
+   "false_hold": 0.0,
+   "switches": null
+  },
+  "CONF": {
+   "catch": 0.08118989211178461,
+   "cost": 0.9499999999999998,
+   "false_hold": 0.04211547820901629,
+   "switches": null
+  },
+  "RANDMATCH": {
+   "catch": 0.7724799510682943,
+   "cost": 3.3766666666666665,
+   "false_hold": 0.11822150493442078,
+   "switches": null
+  }
+ },
+ "hypotheses": {
+  "GV1": false,
+  "GV2": true,
+  "GV3": false,
+  "GV4": true
+ },
+ "win_gv1": 0.5,
+ "win_switches": 0.9666666666666667,
+ "per_stream": {
+  "GOV": [
+   {
+    "catch": 0.8125,
+    "fc_seen": 32,
+    "cost": 3.7,
+    "battery_rate": 0.925,
+    "false_hold": 0.17261904761904762,
+    "switches": 1
+   },
+   {
+    "catch": 0.8571428571428571,
+    "fc_seen": 35,
+    "cost": 3.66,
+    "battery_rate": 0.915,
+    "false_hold": 0.11515151515151516,
+    "switches": 3
+   },
+   {
+    "catch": 0.7333333333333333,
+    "fc_seen": 30,
+    "cost": 3.12,
+    "battery_rate": 0.78,
+    "false_hold": 0.06470588235294118,
+    "switches": 5
+   },
+   {
+    "catch": 0.8421052631578947,
+    "fc_seen": 38,
+    "cost": 3.72,
+    "battery_rate": 0.93,
+    "false_hold": 0.1111111111111111,
+    "switches": 3
+   },
+   {
+    "catch": 0.8214285714285714,
+    "fc_seen": 28,
+    "cost": 3.36,
+    "battery_rate": 0.84,
+    "false_hold": 0.09302325581395349,
+    "switches": 3
+   },
+   {
+    "catch": 0.7307692307692307,
+    "fc_seen": 26,
+    "cost": 3.72,
+    "battery_rate": 0.93,
+    "false_hold": 0.14942528735632185,
+    "switches": 1
+   },
+   {
+    "catch": 0.8260869565217391,
+    "fc_seen": 23,
+    "cost": 3.02,
+    "battery_rate": 0.755,
+    "false_hold": 0.07909604519774012,
+    "switches": 3
+   },
+   {
+    "catch": 0.7222222222222222,
+    "fc_seen": 36,
+    "cost": 3.76,
+    "battery_rate": 0.94,
+    "false_hold": 0.16463414634146342,
+    "switches": 1
+   },
+   {
+    "catch": 0.6956521739130435,
+    "fc_seen": 23,
+    "cost": 3.14,
+    "battery_rate": 0.785,
+    "false_hold": 0.11299435028248588,
+    "switches": 5
+   },
+   {
+    "catch": 0.6296296296296297,
+    "fc_seen": 27,
+    "cost": 3.04,
+    "battery_rate": 0.76,
+    "false_hold": 0.06936416184971098,
+    "switches": 5
+   },
+   {
+    "catch": 0.896551724137931,
+    "fc_seen": 29,
+    "cost": 3.02,
+    "battery_rate": 0.755,
+    "false_hold": 0.14035087719298245,
+    "switches": 1
+   },
+   {
+    "catch": 0.72,
+    "fc_seen": 25,
+    "cost": 2.64,
+    "battery_rate": 0.66,
+    "false_hold": 0.07428571428571429,
+    "switches": 3
+   },
+   {
+    "catch": 0.875,
+    "fc_seen": 24,
+    "cost": 3.24,
+    "battery_rate": 0.81,
+    "false_hold": 0.09659090909090909,
+    "switches": 2
+   },
+   {
+    "catch": 0.7037037037037037,
+    "fc_seen": 27,
+    "cost": 3.1,
+    "battery_rate": 0.775,
+    "false_hold": 0.07514450867052024,
+    "switches": 5
+   },
+   {
+    "catch": 0.7804878048780488,
+    "fc_seen": 41,
+    "cost": 3.08,
+    "battery_rate": 0.77,
+    "false_hold": 0.07547169811320754,
+    "switches": 1
+   },
+   {
+    "catch": 0.5909090909090909,
+    "fc_seen": 22,
+    "cost": 2.58,
+    "battery_rate": 0.645,
+    "false_hold": 0.08426966292134831,
+    "switches": 5
+   },
+   {
+    "catch": 0.7307692307692307,
+    "fc_seen": 26,
+    "cost": 3.12,
+    "battery_rate": 0.78,
+    "false_hold": 0.13218390804597702,
+    "switches": 1
+   },
+   {
+    "catch": 0.8571428571428571,
+    "fc_seen": 21,
+    "cost": 3.24,
+    "battery_rate": 0.81,
+    "false_hold": 0.1005586592178771,
+    "switches": 2
+   },
+   {
+    "catch": 0.8,
+    "fc_seen": 25,
+    "cost": 3.6,
+    "battery_rate": 0.9,
+    "false_hold": 0.12571428571428572,
+    "switches": 3
+   },
+   {
+    "catch": 0.8888888888888888,
+    "fc_seen": 36,
+    "cost": 3.22,
+    "battery_rate": 0.805,
+    "false_hold": 0.10365853658536585,
+    "switches": 1
+   },
+   {
+    "catch": 0.9166666666666666,
+    "fc_seen": 24,
+    "cost": 3.56,
+    "battery_rate": 0.89,
+    "false_hold": 0.13636363636363635,
+    "switches": 1
+   },
+   {
+    "catch": 0.7,
+    "fc_seen": 30,
+    "cost": 3.36,
+    "battery_rate": 0.84,
+    "false_hold": 0.11176470588235295,
+    "switches": 5
+   },
+   {
+    "catch": 0.8695652173913043,
+    "fc_seen": 23,
+    "cost": 3.82,
+    "battery_rate": 0.955,
+    "false_hold": 0.13559322033898305,
+    "switches": 1
+   },
+   {
+    "catch": 0.6774193548387096,
+    "fc_seen": 31,
+    "cost": 3.06,
+    "battery_rate": 0.765,
+    "false_hold": 0.1242603550295858,
+    "switches": 1
+   },
+   {
+    "catch": 0.84,
+    "fc_seen": 25,
+    "cost": 3.7,
+    "battery_rate": 0.925,
+    "false_hold": 0.19428571428571428,
+    "switches": 1
+   },
+   {
+    "catch": 0.8846153846153846,
+    "fc_seen": 26,
+    "cost": 3.8,
+    "battery_rate": 0.95,
+    "false_hold": 0.13218390804597702,
+    "switches": 1
+   },
+   {
+    "catch": 0.8709677419354839,
+    "fc_seen": 31,
+    "cost": 3.58,
+    "battery_rate": 0.895,
+    "false_hold": 0.1301775147928994,
+    "switches": 1
+   },
+   {
+    "catch": 0.8518518518518519,
+    "fc_seen": 27,
+    "cost": 3.02,
+    "battery_rate": 0.755,
+    "false_hold": 0.10404624277456648,
+    "switches": 1
+   },
+   {
+    "catch": 0.9090909090909091,
+    "fc_seen": 33,
+    "cost": 3.34,
+    "battery_rate": 0.835,
+    "false_hold": 0.10179640718562874,
+    "switches": 1
+   },
+   {
+    "catch": 0.7666666666666667,
+    "fc_seen": 30,
+    "cost": 3.82,
+    "battery_rate": 0.955,
+    "false_hold": 0.11176470588235295,
+    "switches": 3
+   }
+  ],
+  "SINGLE": [
+   {
+    "catch": 0.8125,
+    "fc_seen": 32,
+    "cost": 3.82,
+    "battery_rate": 0.955,
+    "false_hold": 0.17857142857142858,
+    "switches": 4
+   },
+   {
+    "catch": 0.8571428571428571,
+    "fc_seen": 35,
+    "cost": 3.62,
+    "battery_rate": 0.905,
+    "false_hold": 0.11515151515151516,
+    "switches": 4
+   },
+   {
+    "catch": 0.7333333333333333,
+    "fc_seen": 30,
+    "cost": 3.46,
+    "battery_rate": 0.865,
+    "false_hold": 0.08823529411764706,
+    "switches": 6
+   },
+   {
+    "catch": 0.8157894736842105,
+    "fc_seen": 38,
+    "cost": 3.78,
+    "battery_rate": 0.945,
+    "false_hold": 0.1111111111111111,
+    "switches": 4
+   },
+   {
+    "catch": 0.8214285714285714,
+    "fc_seen": 28,
+    "cost": 3.46,
+    "battery_rate": 0.865,
+    "false_hold": 0.10465116279069768,
+    "switches": 4
+   },
+   {
+    "catch": 0.7307692307692307,
+    "fc_seen": 26,
+    "cost": 3.74,
+    "battery_rate": 0.935,
+    "false_hold": 0.15517241379310345,
+    "switches": 2
+   },
+   {
+    "catch": 0.8695652173913043,
+    "fc_seen": 23,
+    "cost": 3.12,
+    "battery_rate": 0.78,
+    "false_hold": 0.0903954802259887,
+    "switches": 4
+   },
+   {
+    "catch": 0.6666666666666666,
+    "fc_seen": 36,
+    "cost": 3.42,
+    "battery_rate": 0.855,
+    "false_hold": 0.1402439024390244,
+    "switches": 6
+   },
+   {
+    "catch": 0.6956521739130435,
+    "fc_seen": 23,
+    "cost": 3.12,
+    "battery_rate": 0.78,
+    "false_hold": 0.11299435028248588,
+    "switches": 6
+   },
+   {
+    "catch": 0.6296296296296297,
+    "fc_seen": 27,
+    "cost": 3.0,
+    "battery_rate": 0.75,
+    "false_hold": 0.06936416184971098,
+    "switches": 6
+   },
+   {
+    "catch": 0.896551724137931,
+    "fc_seen": 29,
+    "cost": 3.12,
+    "battery_rate": 0.78,
+    "false_hold": 0.14619883040935672,
+    "switches": 4
+   },
+   {
+    "catch": 0.64,
+    "fc_seen": 25,
+    "cost": 2.88,
+    "battery_rate": 0.72,
+    "false_hold": 0.08571428571428572,
+    "switches": 4
+   },
+   {
+    "catch": 0.75,
+    "fc_seen": 24,
+    "cost": 3.42,
+    "battery_rate": 0.855,
+    "false_hold": 0.11931818181818182,
+    "switches": 4
+   },
+   {
+    "catch": 0.7037037037037037,
+    "fc_seen": 27,
+    "cost": 3.26,
+    "battery_rate": 0.815,
+    "false_hold": 0.08670520231213873,
+    "switches": 4
+   },
+   {
+    "catch": 0.7804878048780488,
+    "fc_seen": 41,
+    "cost": 3.14,
+    "battery_rate": 0.785,
+    "false_hold": 0.07547169811320754,
+    "switches": 2
+   },
+   {
+    "catch": 0.5909090909090909,
+    "fc_seen": 22,
+    "cost": 2.6,
+    "battery_rate": 0.65,
+    "false_hold": 0.0898876404494382,
+    "switches": 6
+   },
+   {
+    "catch": 0.7307692307692307,
+    "fc_seen": 26,
+    "cost": 3.16,
+    "battery_rate": 0.79,
+    "false_hold": 0.13218390804597702,
+    "switches": 2
+   },
+   {
+    "catch": 0.7619047619047619,
+    "fc_seen": 21,
+    "cost": 3.4,
+    "battery_rate": 0.85,
+    "false_hold": 0.10614525139664804,
+    "switches": 5
+   },
+   {
+    "catch": 0.8,
+    "fc_seen": 25,
+    "cost": 3.42,
+    "battery_rate": 0.855,
+    "false_hold": 0.11428571428571428,
+    "switches": 6
+   },
+   {
+    "catch": 0.8888888888888888,
+    "fc_seen": 36,
+    "cost": 3.28,
+    "battery_rate": 0.82,
+    "false_hold": 0.11585365853658537,
+    "switches": 4
+   },
+   {
+    "catch": 0.8333333333333334,
+    "fc_seen": 24,
+    "cost": 3.3,
+    "battery_rate": 0.825,
+    "false_hold": 0.11931818181818182,
+    "switches": 4
+   },
+   {
+    "catch": 0.6666666666666666,
+    "fc_seen": 30,
+    "cost": 3.28,
+    "battery_rate": 0.82,
+    "false_hold": 0.10588235294117647,
+    "switches": 6
+   },
+   {
+    "catch": 0.782608695652174,
+    "fc_seen": 23,
+    "cost": 3.76,
+    "battery_rate": 0.94,
+    "false_hold": 0.13559322033898305,
+    "switches": 4
+   },
+   {
+    "catch": 0.6451612903225806,
+    "fc_seen": 31,
+    "cost": 3.02,
+    "battery_rate": 0.755,
+    "false_hold": 0.1242603550295858,
+    "switches": 4
+   },
+   {
+    "catch": 0.8,
+    "fc_seen": 25,
+    "cost": 3.64,
+    "battery_rate": 0.91,
+    "false_hold": 0.18857142857142858,
+    "switches": 4
+   },
+   {
+    "catch": 0.8076923076923077,
+    "fc_seen": 26,
+    "cost": 3.42,
+    "battery_rate": 0.855,
+    "false_hold": 0.10344827586206896,
+    "switches": 4
+   },
+   {
+    "catch": 0.8387096774193549,
+    "fc_seen": 31,
+    "cost": 3.5,
+    "battery_rate": 0.875,
+    "false_hold": 0.1242603550295858,
+    "switches": 4
+   },
+   {
+    "catch": 0.8518518518518519,
+    "fc_seen": 27,
+    "cost": 3.56,
+    "battery_rate": 0.89,
+    "false_hold": 0.14450867052023122,
+    "switches": 2
+   },
+   {
+    "catch": 0.9090909090909091,
+    "fc_seen": 33,
+    "cost": 3.44,
+    "battery_rate": 0.86,
+    "false_hold": 0.10778443113772455,
+    "switches": 2
+   },
+   {
+    "catch": 0.7666666666666667,
+    "fc_seen": 30,
+    "cost": 3.86,
+    "battery_rate": 0.965,
+    "false_hold": 0.11176470588235295,
+    "switches": 4
+   }
+  ],
+  "ALL": [
+   {
+    "catch": 0.84375,
+    "fc_seen": 32,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.18452380952380953,
+    "switches": null
+   },
+   {
+    "catch": 0.9428571428571428,
+    "fc_seen": 35,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.12121212121212122,
+    "switches": null
+   },
+   {
+    "catch": 0.9,
+    "fc_seen": 30,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11176470588235295,
+    "switches": null
+   },
+   {
+    "catch": 0.9473684210526315,
+    "fc_seen": 38,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11728395061728394,
+    "switches": null
+   },
+   {
+    "catch": 0.9285714285714286,
+    "fc_seen": 28,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.12209302325581395,
+    "switches": null
+   },
+   {
+    "catch": 0.8076923076923077,
+    "fc_seen": 26,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.16091954022988506,
+    "switches": null
+   },
+   {
+    "catch": 0.9130434782608695,
+    "fc_seen": 23,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11299435028248588,
+    "switches": null
+   },
+   {
+    "catch": 0.7777777777777778,
+    "fc_seen": 36,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.16463414634146342,
+    "switches": null
+   },
+   {
+    "catch": 0.9130434782608695,
+    "fc_seen": 23,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.13559322033898305,
+    "switches": null
+   },
+   {
+    "catch": 0.8518518518518519,
+    "fc_seen": 27,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.09248554913294797,
+    "switches": null
+   },
+   {
+    "catch": 0.896551724137931,
+    "fc_seen": 29,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.17543859649122806,
+    "switches": null
+   },
+   {
+    "catch": 0.84,
+    "fc_seen": 25,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.13142857142857142,
+    "switches": null
+   },
+   {
+    "catch": 0.9583333333333334,
+    "fc_seen": 24,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.13068181818181818,
+    "switches": null
+   },
+   {
+    "catch": 0.8888888888888888,
+    "fc_seen": 27,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.10982658959537572,
+    "switches": null
+   },
+   {
+    "catch": 0.8780487804878049,
+    "fc_seen": 41,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.09433962264150944,
+    "switches": null
+   },
+   {
+    "catch": 0.9545454545454546,
+    "fc_seen": 22,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.12359550561797752,
+    "switches": null
+   },
+   {
+    "catch": 0.8846153846153846,
+    "fc_seen": 26,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.1724137931034483,
+    "switches": null
+   },
+   {
+    "catch": 0.9047619047619048,
+    "fc_seen": 21,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11731843575418995,
+    "switches": null
+   },
+   {
+    "catch": 0.96,
+    "fc_seen": 25,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.13714285714285715,
+    "switches": null
+   },
+   {
+    "catch": 0.9444444444444444,
+    "fc_seen": 36,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.12804878048780488,
+    "switches": null
+   },
+   {
+    "catch": 0.9583333333333334,
+    "fc_seen": 24,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.14204545454545456,
+    "switches": null
+   },
+   {
+    "catch": 0.9,
+    "fc_seen": 30,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11764705882352941,
+    "switches": null
+   },
+   {
+    "catch": 0.9130434782608695,
+    "fc_seen": 23,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.14124293785310735,
+    "switches": null
+   },
+   {
+    "catch": 0.7741935483870968,
+    "fc_seen": 31,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.1834319526627219,
+    "switches": null
+   },
+   {
+    "catch": 0.88,
+    "fc_seen": 25,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.21142857142857144,
+    "switches": null
+   },
+   {
+    "catch": 0.9230769230769231,
+    "fc_seen": 26,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.13218390804597702,
+    "switches": null
+   },
+   {
+    "catch": 0.9032258064516129,
+    "fc_seen": 31,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.15976331360946747,
+    "switches": null
+   },
+   {
+    "catch": 0.8888888888888888,
+    "fc_seen": 27,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.16184971098265896,
+    "switches": null
+   },
+   {
+    "catch": 0.9696969696969697,
+    "fc_seen": 33,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.1377245508982036,
+    "switches": null
+   },
+   {
+    "catch": 0.8666666666666667,
+    "fc_seen": 30,
+    "cost": 4.0,
+    "battery_rate": 1.0,
+    "false_hold": 0.11176470588235295,
+    "switches": null
+   }
+  ],
+  "NONE": [
+   {
+    "catch": 0.0,
+    "fc_seen": 32,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 35,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 30,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 38,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 28,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 26,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 23,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 36,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 23,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 27,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 29,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 25,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 24,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 27,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 41,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 22,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 26,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 21,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 25,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 36,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 24,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 30,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 23,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 31,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 25,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 26,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 31,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 27,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 33,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 30,
+    "cost": 0.0,
+    "battery_rate": 0.0,
+    "false_hold": 0.0,
+    "switches": null
+   }
+  ],
+  "CONF": [
+   {
+    "catch": 0.125,
+    "fc_seen": 32,
+    "cost": 0.9,
+    "battery_rate": 0.225,
+    "false_hold": 0.06547619047619048,
+    "switches": null
+   },
+   {
+    "catch": 0.08571428571428572,
+    "fc_seen": 35,
+    "cost": 0.92,
+    "battery_rate": 0.23,
+    "false_hold": 0.01818181818181818,
+    "switches": null
+   },
+   {
+    "catch": 0.06666666666666667,
+    "fc_seen": 30,
+    "cost": 0.8,
+    "battery_rate": 0.2,
+    "false_hold": 0.047058823529411764,
+    "switches": null
+   },
+   {
+    "catch": 0.10526315789473684,
+    "fc_seen": 38,
+    "cost": 0.98,
+    "battery_rate": 0.245,
+    "false_hold": 0.018518518518518517,
+    "switches": null
+   },
+   {
+    "catch": 0.03571428571428571,
+    "fc_seen": 28,
+    "cost": 0.88,
+    "battery_rate": 0.22,
+    "false_hold": 0.046511627906976744,
+    "switches": null
+   },
+   {
+    "catch": 0.11538461538461539,
+    "fc_seen": 26,
+    "cost": 1.08,
+    "battery_rate": 0.27,
+    "false_hold": 0.08045977011494253,
+    "switches": null
+   },
+   {
+    "catch": 0.17391304347826086,
+    "fc_seen": 23,
+    "cost": 0.9,
+    "battery_rate": 0.225,
+    "false_hold": 0.01694915254237288,
+    "switches": null
+   },
+   {
+    "catch": 0.05555555555555555,
+    "fc_seen": 36,
+    "cost": 0.94,
+    "battery_rate": 0.235,
+    "false_hold": 0.06097560975609756,
+    "switches": null
+   },
+   {
+    "catch": 0.08695652173913043,
+    "fc_seen": 23,
+    "cost": 0.82,
+    "battery_rate": 0.205,
+    "false_hold": 0.022598870056497175,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 27,
+    "cost": 1.14,
+    "battery_rate": 0.285,
+    "false_hold": 0.057803468208092484,
+    "switches": null
+   },
+   {
+    "catch": 0.13793103448275862,
+    "fc_seen": 29,
+    "cost": 0.96,
+    "battery_rate": 0.24,
+    "false_hold": 0.05847953216374269,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 25,
+    "cost": 0.98,
+    "battery_rate": 0.245,
+    "false_hold": 0.02857142857142857,
+    "switches": null
+   },
+   {
+    "catch": 0.08333333333333333,
+    "fc_seen": 24,
+    "cost": 0.78,
+    "battery_rate": 0.195,
+    "false_hold": 0.028409090909090908,
+    "switches": null
+   },
+   {
+    "catch": 0.07407407407407407,
+    "fc_seen": 27,
+    "cost": 0.94,
+    "battery_rate": 0.235,
+    "false_hold": 0.03468208092485549,
+    "switches": null
+   },
+   {
+    "catch": 0.07317073170731707,
+    "fc_seen": 41,
+    "cost": 0.92,
+    "battery_rate": 0.23,
+    "false_hold": 0.025157232704402517,
+    "switches": null
+   },
+   {
+    "catch": 0.09090909090909091,
+    "fc_seen": 22,
+    "cost": 1.0,
+    "battery_rate": 0.25,
+    "false_hold": 0.056179775280898875,
+    "switches": null
+   },
+   {
+    "catch": 0.23076923076923078,
+    "fc_seen": 26,
+    "cost": 1.08,
+    "battery_rate": 0.27,
+    "false_hold": 0.05172413793103448,
+    "switches": null
+   },
+   {
+    "catch": 0.09523809523809523,
+    "fc_seen": 21,
+    "cost": 1.12,
+    "battery_rate": 0.28,
+    "false_hold": 0.0446927374301676,
+    "switches": null
+   },
+   {
+    "catch": 0.04,
+    "fc_seen": 25,
+    "cost": 0.78,
+    "battery_rate": 0.195,
+    "false_hold": 0.011428571428571429,
+    "switches": null
+   },
+   {
+    "catch": 0.08333333333333333,
+    "fc_seen": 36,
+    "cost": 0.9,
+    "battery_rate": 0.225,
+    "false_hold": 0.024390243902439025,
+    "switches": null
+   },
+   {
+    "catch": 0.08333333333333333,
+    "fc_seen": 24,
+    "cost": 1.06,
+    "battery_rate": 0.265,
+    "false_hold": 0.05113636363636364,
+    "switches": null
+   },
+   {
+    "catch": 0.06666666666666667,
+    "fc_seen": 30,
+    "cost": 0.94,
+    "battery_rate": 0.235,
+    "false_hold": 0.047058823529411764,
+    "switches": null
+   },
+   {
+    "catch": 0.08695652173913043,
+    "fc_seen": 23,
+    "cost": 0.92,
+    "battery_rate": 0.23,
+    "false_hold": 0.03389830508474576,
+    "switches": null
+   },
+   {
+    "catch": 0.12903225806451613,
+    "fc_seen": 31,
+    "cost": 1.12,
+    "battery_rate": 0.28,
+    "false_hold": 0.07100591715976332,
+    "switches": null
+   },
+   {
+    "catch": 0.08,
+    "fc_seen": 25,
+    "cost": 1.06,
+    "battery_rate": 0.265,
+    "false_hold": 0.07428571428571429,
+    "switches": null
+   },
+   {
+    "catch": 0.0,
+    "fc_seen": 26,
+    "cost": 0.86,
+    "battery_rate": 0.215,
+    "false_hold": 0.022988505747126436,
+    "switches": null
+   },
+   {
+    "catch": 0.0967741935483871,
+    "fc_seen": 31,
+    "cost": 0.94,
+    "battery_rate": 0.235,
+    "false_hold": 0.03550295857988166,
+    "switches": null
+   },
+   {
+    "catch": 0.037037037037037035,
+    "fc_seen": 27,
+    "cost": 1.0,
+    "battery_rate": 0.25,
+    "false_hold": 0.05202312138728324,
+    "switches": null
+   },
+   {
+    "catch": 0.030303030303030304,
+    "fc_seen": 33,
+    "cost": 0.88,
+    "battery_rate": 0.22,
+    "false_hold": 0.04790419161676647,
+    "switches": null
+   },
+   {
+    "catch": 0.06666666666666667,
+    "fc_seen": 30,
+    "cost": 0.9,
+    "battery_rate": 0.225,
+    "false_hold": 0.029411764705882353,
+    "switches": null
+   }
+  ],
+  "RANDMATCH": [
+   {
+    "catch": 0.75,
+    "fc_seen": 32,
+    "cost": 3.6,
+    "battery_rate": 0.9,
+    "false_hold": 0.16666666666666666,
+    "switches": null
+   },
+   {
+    "catch": 0.8,
+    "fc_seen": 35,
+    "cost": 3.66,
+    "battery_rate": 0.915,
+    "false_hold": 0.10303030303030303,
+    "switches": null
+   },
+   {
+    "catch": 0.7,
+    "fc_seen": 30,
+    "cost": 3.2,
+    "battery_rate": 0.8,
+    "false_hold": 0.08823529411764706,
+    "switches": null
+   },
+   {
+    "catch": 0.9210526315789473,
+    "fc_seen": 38,
+    "cost": 3.72,
+    "battery_rate": 0.93,
+    "false_hold": 0.1111111111111111,
+    "switches": null
+   },
+   {
+    "catch": 0.8214285714285714,
+    "fc_seen": 28,
+    "cost": 3.52,
+    "battery_rate": 0.88,
+    "false_hold": 0.09302325581395349,
+    "switches": null
+   },
+   {
+    "catch": 0.8076923076923077,
+    "fc_seen": 26,
+    "cost": 3.84,
+    "battery_rate": 0.96,
+    "false_hold": 0.16091954022988506,
+    "switches": null
+   },
+   {
+    "catch": 0.6956521739130435,
+    "fc_seen": 23,
+    "cost": 2.8,
+    "battery_rate": 0.7,
+    "false_hold": 0.0847457627118644,
+    "switches": null
+   },
+   {
+    "catch": 0.75,
+    "fc_seen": 36,
+    "cost": 3.84,
+    "battery_rate": 0.96,
+    "false_hold": 0.15853658536585366,
+    "switches": null
+   },
+   {
+    "catch": 0.6956521739130435,
+    "fc_seen": 23,
+    "cost": 3.08,
+    "battery_rate": 0.77,
+    "false_hold": 0.10734463276836158,
+    "switches": null
+   },
+   {
+    "catch": 0.5925925925925926,
+    "fc_seen": 27,
+    "cost": 3.2,
+    "battery_rate": 0.8,
+    "false_hold": 0.06358381502890173,
+    "switches": null
+   },
+   {
+    "catch": 0.7931034482758621,
+    "fc_seen": 29,
+    "cost": 3.2,
+    "battery_rate": 0.8,
+    "false_hold": 0.15204678362573099,
+    "switches": null
+   },
+   {
+    "catch": 0.64,
+    "fc_seen": 25,
+    "cost": 2.68,
+    "battery_rate": 0.67,
+    "false_hold": 0.06857142857142857,
+    "switches": null
+   },
+   {
+    "catch": 0.7916666666666666,
+    "fc_seen": 24,
+    "cost": 3.26,
+    "battery_rate": 0.815,
+    "false_hold": 0.10795454545454546,
+    "switches": null
+   },
+   {
+    "catch": 0.8148148148148148,
+    "fc_seen": 27,
+    "cost": 3.18,
+    "battery_rate": 0.795,
+    "false_hold": 0.08670520231213873,
+    "switches": null
+   },
+   {
+    "catch": 0.6829268292682927,
+    "fc_seen": 41,
+    "cost": 3.4,
+    "battery_rate": 0.85,
+    "false_hold": 0.0880503144654088,
+    "switches": null
+   },
+   {
+    "catch": 0.7272727272727273,
+    "fc_seen": 22,
+    "cost": 2.62,
+    "battery_rate": 0.655,
+    "false_hold": 0.08426966292134831,
+    "switches": null
+   },
+   {
+    "catch": 0.5769230769230769,
+    "fc_seen": 26,
+    "cost": 3.18,
+    "battery_rate": 0.795,
+    "false_hold": 0.14367816091954022,
+    "switches": null
+   },
+   {
+    "catch": 0.7142857142857143,
+    "fc_seen": 21,
+    "cost": 3.32,
+    "battery_rate": 0.83,
+    "false_hold": 0.1005586592178771,
+    "switches": null
+   },
+   {
+    "catch": 0.88,
+    "fc_seen": 25,
+    "cost": 3.7,
+    "battery_rate": 0.925,
+    "false_hold": 0.13142857142857142,
+    "switches": null
+   },
+   {
+    "catch": 0.7222222222222222,
+    "fc_seen": 36,
+    "cost": 3.14,
+    "battery_rate": 0.785,
+    "false_hold": 0.11585365853658537,
+    "switches": null
+   },
+   {
+    "catch": 0.9583333333333334,
+    "fc_seen": 24,
+    "cost": 3.68,
+    "battery_rate": 0.92,
+    "false_hold": 0.13068181818181818,
+    "switches": null
+   },
+   {
+    "catch": 0.7666666666666667,
+    "fc_seen": 30,
+    "cost": 3.5,
+    "battery_rate": 0.875,
+    "false_hold": 0.11764705882352941,
+    "switches": null
+   },
+   {
+    "catch": 0.9130434782608695,
+    "fc_seen": 23,
+    "cost": 3.84,
+    "battery_rate": 0.96,
+    "false_hold": 0.13559322033898305,
+    "switches": null
+   },
+   {
+    "catch": 0.6774193548387096,
+    "fc_seen": 31,
+    "cost": 3.14,
+    "battery_rate": 0.785,
+    "false_hold": 0.16568047337278108,
+    "switches": null
+   },
+   {
+    "catch": 0.84,
+    "fc_seen": 25,
+    "cost": 3.78,
+    "battery_rate": 0.945,
+    "false_hold": 0.2,
+    "switches": null
+   },
+   {
+    "catch": 0.9230769230769231,
+    "fc_seen": 26,
+    "cost": 3.78,
+    "battery_rate": 0.945,
+    "false_hold": 0.13218390804597702,
+    "switches": null
+   },
+   {
+    "catch": 0.8064516129032258,
+    "fc_seen": 31,
+    "cost": 3.54,
+    "battery_rate": 0.885,
+    "false_hold": 0.13609467455621302,
+    "switches": null
+   },
+   {
+    "catch": 0.6666666666666666,
+    "fc_seen": 27,
+    "cost": 2.86,
+    "battery_rate": 0.715,
+    "false_hold": 0.08092485549132948,
+    "switches": null
+   },
+   {
+    "catch": 0.8787878787878788,
+    "fc_seen": 33,
+    "cost": 3.22,
+    "battery_rate": 0.805,
+    "false_hold": 0.11976047904191617,
+    "switches": null
+   },
+   {
+    "catch": 0.8666666666666667,
+    "fc_seen": 30,
+    "cost": 3.82,
+    "battery_rate": 0.955,
+    "false_hold": 0.11176470588235295,
+    "switches": null
+   }
+  ]
+ },
+ "recovery_points": [
+  [
+   0.9867439641319021,
+   29
+  ],
+  [
+   0.9973555757979733,
+   15
+  ],
+  [
+   0.9988883027929516,
+   42
+  ],
+  [
+   0.9997325223035602,
+   42
+  ],
+  [
+   0.9982476637842493,
+   30
+  ],
+  [
+   0.989167041416241,
+   16
+  ],
+  [
+   0.9598460848516871,
+   18
+  ],
+  [
+   0.9975193349273724,
+   26
+  ],
+  [
+   0.9985174764723123,
+   26
+  ],
+  [
+   0.9575897726274716,
+   13
+  ],
+  [
+   0.999885960821611,
+   40
+  ],
+  [
+   0.9995896118628881,
+   33
+  ]
+ ]
+}
