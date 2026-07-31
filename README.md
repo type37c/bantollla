@@ -42,12 +42,18 @@
 AI に仕事を任せる時代に必要なのは、賢いエージェントではなく、
 **エージェントを信じられる根拠**です。banto はそれを記録の側から作ります。
 
+この門をエージェント専用の製品として立てる姉妹リポジトリが
+[monban(門番)](https://github.com/type37c/monbanllla) です(設計段階)。
+番頭が帳場を守り、門番が門を守る — 台帳は一つ、門は交換可能、という役割分担です。
+
 ## 使い方
 
 Rust 製の CLI です。ネットワークも、アカウントも、他人も要りません。
 
 ```sh
-cargo install --path crates/banto-cli   # このリポジトリから
+git clone https://github.com/type37c/bantollla
+cd bantollla
+cargo install --path crates/banto-cli   # このリポジトリから(crates.io には未公開)
 mkdir ~/work && cd ~/work               # 台帳を置く作業ディレクトリで
 banto init --actor あなたの名前
 banto note "最初のメモ"
@@ -64,12 +70,12 @@ banto brief
 | コマンド | 動作 |
 |---|---|
 | `banto init` | ワークスペースを初期化(banto.toml・空の台帳・蔵) |
-| `banto note TEXT` | アイデア・メモの捕捉(新アイデアは既定で保留場行き) |
+| `banto note TEXT` | アイデア・メモの捕捉(ループにせず書き留める。一覧は `banto log`。brief の「保留場」には数えない) |
 | `banto journal --text TEXT` | 朝の統括の記帳(媒体非依存、テキストが本体) |
 | `banto loop open/next/touch/close/park/kill` | ループの一生 |
 | `banto brief` | 朝礼ビュー(稼働中ループを放置日数の降順で) |
 | `banto gate declare/check/verify` | ゲート(証拠必須・宣言者は検証不可) |
-| `banto verify [--deep]` | 台帳全検査(ハッシュ鎖・正準形・証拠) |
+| `banto verify [--deep]` | 台帳全検査(既定は鎖と正準形。証拠ハッシュまで検めるのは `--deep`) |
 | `banto health` | 鐘(停滞・途絶があれば終了コード 1) |
 
 仕様の全体は [docs/cli_spec_v1.md](docs/cli_spec_v1.md)、
@@ -83,7 +89,7 @@ banto brief
 |---|---|
 | ループ | 開いた仕事。開く・進める・閉じる・保留(park)・殺す(kill) |
 | 次の一手 | ループごとに常に一つ。15〜30分で終わる粒度 |
-| 保留場 | 新しいアイデアの既定の行き先。熱が冷めても消えない場所 |
+| 保留場 | 意識的に保留(park)されたループの置き場。熱が冷めても消えない場所(brief が数えるのはこれ。note で捕捉したメモは台帳に残り `banto log` で読む) |
 | claim / verified | 「できたという主張」と「証拠で確認された事実」。別物 |
 | ゲート | claim を verified に変える門。証拠必須・宣言者は検証不可 |
 | 台帳 | 追記専用・ハッシュ連鎖のイベント列。編集も削除も不可能 |

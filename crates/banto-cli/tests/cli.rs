@@ -692,22 +692,14 @@ fn journal_is_medium_agnostic_and_idempotent() {
     let ws = init_ws();
     // テキストだけで記帳できる(媒体非依存)
     let out = banto(&ws)
-        .args([
-            "journal",
-            "--text",
-            "今日は倉庫を片付けた。棚は明日組む。",
-        ])
+        .args(["journal", "--text", "今日は倉庫を片付けた。棚は明日組む。"])
         .output()
         .unwrap();
     assert!(out.status.success());
     let id1 = extract_id(&out);
     // 同じテキストの再記帳は同一イベント(冪等)
     let out2 = banto(&ws)
-        .args([
-            "journal",
-            "--text",
-            "今日は倉庫を片付けた。棚は明日組む。",
-        ])
+        .args(["journal", "--text", "今日は倉庫を片付けた。棚は明日組む。"])
         .output()
         .unwrap();
     assert_eq!(id1, extract_id(&out2));

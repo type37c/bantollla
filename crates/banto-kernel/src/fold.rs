@@ -169,7 +169,7 @@ pub fn brief(events: &[Envelope], config: &BriefConfig) -> Brief {
             _ => {}
         }
     }
-    active.sort_by(|a, b| b.days_idle.cmp(&a.days_idle));
+    active.sort_by_key(|l| std::cmp::Reverse(l.days_idle));
     let wip_exceeded = active.iter().filter(|l| l.state.kind != "habit").count() > config.wip_limit;
     Brief {
         active,

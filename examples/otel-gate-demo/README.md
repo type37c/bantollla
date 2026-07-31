@@ -11,23 +11,28 @@ Zenn 記事「LLMエージェントの「できました」を検証する — O
 | `agent_task.py` | OTel SDK で計装した作業体(決定的スクリプト。LLM ではない — 記事中で明示) |
 | `report.md` | 成果物: crates/ の Rust 行数レポート(13 ファイル・4106 行) |
 | `trace.json` | 実行時トレース(単一 trace_id・親子 span・観測属性つき) |
-| `ledger/` | **demo 台帳そのもの**(banto、追記専用・SHA-256 ハッシュ連鎖)。claim.declare(agent:claude)→ 自己 verify の拒絶(契約 不変量3)→ 別 actor(keisuke)の claim.verify、および本記事自体の公開主張の claim が入っている |
+| `ledger/` | **demo 台帳そのもの**(banto、追記専用・SHA-256 ハッシュ連鎖)。claim.declare(agent:claude)→ 別 actor(keisuke)の claim.verify、および本記事自体の公開主張の claim が入っている。自己 verify の拒絶(契約 不変量3)は CLI が弾くため台帳には残らない — 同一 actor で `banto gate verify` を打てば誰でもその場で再現できる |
 | `records/` | 記事「想像の話ではありません」節の一次記録(下記) |
 | `article/` | 公開した記事本文(= 台帳に宣言された証拠の原本) |
 
 ## 再現手順(banto v0.1.0)
 
 ```sh
-# 1. 作業体を実行(成果物とトレースが出る)
-python agent_task.py
+# 0. Python 依存(OTel SDK)を入れる
+pip install -r requirements.txt
+
+# 1. 作業体を実行(成果物とトレースが出る)— この example ディレクトリで
+python3 agent_task.py
 
 # 2. 検数の独立再計算(記事の「別実装で数え直す」)
-git checkout 4c437df   # このリポジトリの固定コミット
-find crates -name '*.rs' | sort | xargs wc -l | tail -1   # → 4106 total
+#    固定コミットは worktree で開く(働き木を汚さず、examples/ も消えない)
+git worktree add /tmp/banto-4c437df 4c437df
+find /tmp/banto-4c437df/crates -name '*.rs' | sort | xargs wc -l | tail -1   # → 4106 total
+git worktree remove /tmp/banto-4c437df
 
-# 3. 台帳の検分
+# 3. 台帳の検分 — この example ディレクトリで
 banto verify           # ハッシュ連鎖の健全性
-banto log              # declare → 拒絶 → verify の実イベント
+banto log              # declare → verify の実イベント
 ```
 
 ## records/ — 開発史の一次記録

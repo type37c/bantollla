@@ -28,12 +28,31 @@ Zenn 記事「LLMエージェントの「できました」を検証する(2)」
 
 ## 再現手順
 
+前提: **Linux/amd64 専用**。setup.sh はホストを改変する — システムユーザー
+`agentworker` と `/var/otel-vault`(root 所有 0700)を恒久作成する。
+後始末は `scripts/teardown.sh`。
+
 ```sh
-sudo sh scripts/setup.sh                 # Collector 起動(別端末で)
-python3 agent_task_otlp.py <repo> report.md   # 作業体として実行
-banto verify && banto log                # 台帳の検分
-git checkout 4c437df && find crates -name '*.rs' | xargs wc -l | tail -1
-                                         # 独立再計算 → 4106
+# 0. Python 依存を入れる
+pip install -r requirements.txt
+
+# 1. Collector 起動(別端末で。上記のホスト改変に同意の上で)
+sudo sh scripts/setup.sh
+
+# 2. 作業体として実行(setup.sh が agentworker の手元に置いた鍵とトークンを渡す)
+sudo -u agentworker env \
+  OTLP_CA_CERT=/home/agentworker/server.crt \
+  OTLP_TOKEN="$(sudo cat /home/agentworker/token.txt)" \
+  python3 agent_task_otlp.py <repo> report.md
+#  (Python 依存は実行ユーザーから見える場所に。venv なら venv の python3 を指す)
+
+# 3. 台帳の検分 — この example ディレクトリで
+banto verify && banto log
+
+# 4. 検数の独立再計算(固定コミットは worktree で開く。働き木を汚さない)
+git worktree add /tmp/banto-4c437df 4c437df
+find /tmp/banto-4c437df/crates -name '*.rs' | xargs wc -l | tail -1   # → 4106 total
+git worktree remove /tmp/banto-4c437df
 ```
 
 ## ライセンス

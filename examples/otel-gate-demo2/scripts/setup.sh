@@ -1,7 +1,13 @@
 #!/bin/sh
 # 続編デモの土台: 独立Collector(認証+TLS+権限分離)を立てる
 # 前提: root で実行。WORK は台帳や repo の外(証明書と鍵の置き場)
+# 注意: ホストを改変する — システムユーザー agentworker と /var/otel-vault を
+#       恒久作成する。後始末は同ディレクトリの teardown.sh
 set -eu
+case "$(uname -sm)" in
+  "Linux x86_64") ;;
+  *) echo "このスクリプトは Linux/amd64 専用(otelcol バイナリと useradd の前提)" >&2; exit 1 ;;
+esac
 WORK="${WORK:-$HOME/otel-vault-work}"
 VAULT="${VAULT:-/var/otel-vault}"
 VER=0.157.0
@@ -11,7 +17,7 @@ mkdir -p "$WORK" && cd "$WORK"
 
 # 1. 本物の Collector(otelcol-contrib)
 if [ ! -x otelcol-contrib ]; then
-  curl -sL -o otelcol.tar.gz "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v${VER}/otelcol-contrib_${VER}_linux_amd64.tar.gz"
+  curl -fsSL -o otelcol.tar.gz "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v${VER}/otelcol-contrib_${VER}_linux_amd64.tar.gz"
   tar xzf otelcol.tar.gz otelcol-contrib
 fi
 
